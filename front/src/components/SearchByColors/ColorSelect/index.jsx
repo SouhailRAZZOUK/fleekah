@@ -16,6 +16,9 @@ class ColorSelect extends PureComponent {
       listOpen: false,
       headerTitle: this.props.title
     }
+    this.toggleList = this.toggleList.bind(this);
+    this.handleClickOutside = this.handleClickOutside.bind(this);
+    this.selectItem = this.selectItem.bind(this);
   }
 
   handleClickOutside(e) {
