@@ -1,0 +1,12 @@
+.mdc-snackbar.mdc-snackbar--active{
+    z-index: 1000;
+}
+
+.mdc-snackbar.mdc-snackbar--error .mdc-snackbar__action-button{
+    color: #f32e27;
+}
+
+.mdc-snackbar__text{
+    height: auto;
+    min-height: 48px;
+}

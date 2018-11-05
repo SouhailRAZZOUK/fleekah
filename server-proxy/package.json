@@ -1,0 +1,21 @@
+{
+  "name": "fleekah",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Souhail RAZZOUK <souhail.razzouk@hotmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "@sentry/node": "^4.2.4",
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.4",
+    "express": "^4.16.4",
+    "flickr-sdk": "^3.7.0",
+    "node-fetch": "^2.2.0",
+    "node-vibrant": "^3.0.0",
+    "webtask-tools": "^3.4.0"
+  }
+}

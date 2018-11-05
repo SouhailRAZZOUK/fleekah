@@ -1,0 +1,27 @@
+html, 
+body, 
+#root, 
+#root #main {
+  height: 100%;
+}
+
+#root #main img {
+  width: 100%;
+}
+
+#root #main img.iron-image {
+  position: relative;
+  height: auto;
+  background: url("./assets/images/placeholder.png") no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+}
+
+#root #main section.mdc-top-app-bar--fixed-adjust{
+  height: 100%;
+  box-sizing: border-box;
+}
+
+#root #main .leaflet-container {
+  height: 100%;
+}
