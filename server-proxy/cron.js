@@ -43,7 +43,8 @@ module.exports = function (ctx, cb) {
             if (body && body.photos) {
                 let callback = persistCallback(cb);
                 let photos = body.photos.photo;
-                return persistDataToStorage(photos, ctx, callback);
+                persistDataToStorage(photos, ctx, callback);
+                return;
             }
             cb("no photos");
         })
