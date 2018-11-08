@@ -74,7 +74,7 @@ class ColorSelect extends PureComponent {
           }
         </div>
         {listOpen && <ul className="dd-list">
-          {colors.map((item, index) => (
+          {colors && colors.map((item, index) => (
             <li className="dd-list-item" key={index} onClick={() => this.selectItem(item)}>
               <span style={{
                 display: "inline-block",

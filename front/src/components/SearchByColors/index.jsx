@@ -46,19 +46,6 @@ class SearchByColors extends PureComponent {
         }
     }
 
-    componentWillMount() {
-        let { availableColors } = this.props;
-        let { vibrants, muted } = availableColors;
-
-        vibrants = this._reMapAvailableColors(vibrants);
-        muted = this._reMapAvailableColors(muted);
-
-        this.setState({
-            vibrants,
-            muted
-        })
-    }
-
     _handleColorSelectionChange(selectedColor, itemsKey) {
         let { fetchSearchResults } = this.props;
         let colorArray = selectedColor.value.substring(4, selectedColor.value.length - 1)
@@ -93,8 +80,11 @@ class SearchByColors extends PureComponent {
 
     render() {
 
-        let { alerts, data } = this.props;
-        let { vibrants, muted } = this.state;
+        let { alerts, data, availableColors } = this.props;
+        let { vibrants, muted } = availableColors;
+
+        vibrants = this._reMapAvailableColors(vibrants);
+        muted = this._reMapAvailableColors(muted);
 
         return <div>
             <SnackBar />
