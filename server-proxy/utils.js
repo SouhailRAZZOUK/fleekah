@@ -14,6 +14,8 @@ const getDogsPhotos = (flickr) => flickr.photos.search(FLICKR_SEARCH_OPTIONS)
 const getUserPhotos = (id, flickr) => flickr.people.getPhotos({ user_id: id, extras: FLICKR_SEARCH_EXTRAS })
     .then((response) => response.body)
 
+const getPhotoFromOrigin = (id) => flickr
+
 const mapPhotosURLs = (photos) => {
     for (let photo of photos) {
         photo.url = photo.url_o;
